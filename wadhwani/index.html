@@ -1,0 +1,226 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SafeX - Personal Safety & Device Tracking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">SafeX</div>
+    <p class="tagline">Affordable Voice-Activated Wearable Safety Devices</p>
+    <nav>
+      <a href="#tracking">Live Tracking</a>
+      <a href="#health">Health Monitor</a>
+      <a href="#sos">SOS Alert</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section with Image -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Your Safety, Our Priority</h1>
+        <p>Real-time GPS tracking, voice-activated SOS alerts, and health monitoring for children, women, and the elderly</p>
+      </div>
+      <div class="hero-image">
+        <img src="https://pplx-res.cloudinary.com/image/upload/v1762688053/pplx_project_search_images/affe2b286bccf914604413ba7a86fe3c2517a256.png" alt="Family Safety">
+      </div>
+    </section>
+
+    <!-- Live Device Tracking Map -->
+    <section id="tracking" class="section-card">
+      <h2>🌍 Live Device Tracking</h2>
+      <div class="tracking-wrapper">
+        <div class="map-container">
+          <div id="map"></div>
+        </div>
+        <div class="tracking-image">
+          <img src="https://pplx-res.cloudinary.com/image/upload/v1759846068/pplx_project_search_images/f06481ff50167ff66d890163f480e3f279d9b35b.png" alt="GPS Tracking">
+        </div>
+      </div>
+      
+      <div class="device-grid">
+        <div class="device-item airtag">
+          <span class="device-icon">📍</span>
+          <div class="device-info">
+            <h3>SafeX Airtag</h3>
+            <p class="status online">● Online</p>
+            <p class="location">Last Location: Home, Mumbai</p>
+            <p class="time">Updated: 2 mins ago</p>
+          </div>
+        </div>
+        <div class="device-item smartwatch">
+          <span class="device-icon">⌚</span>
+          <div class="device-info">
+            <h3>SafeX Smartwatch</h3>
+            <p class="status online">● Online</p>
+            <p class="location">Last Location: Office, Bangalore</p>
+            <p class="time">Updated: 5 mins ago</p>
+          </div>
+        </div>
+      </div>
+      <p class="note">💡 Allow browser location access for live tracking. Devices use ESP32 + GPS modules for real-time positioning.</p>
+    </section>
+
+    <!-- SOS Alert Feature with Image -->
+    <section id="sos" class="section-card sos-section">
+      <h2>🚨 Voice-Activated SOS Alert</h2>
+      <div class="sos-wrapper">
+        <div class="sos-image">
+          <img src="https://pplx-res.cloudinary.com/image/upload/v1762688053/pplx_project_search_images/f55b8df6e1fef696d6bc9f5ed31ddf3d14c60d93.png" alt="SOS Emergency System">
+        </div>
+        <div class="sos-content">
+          <div class="sos-feature">
+            <div class="feature-icon">🎤</div>
+            <h3>Hands-Free Emergency</h3>
+            <p>Simply say your preset code word to trigger instant SOS alerts to family and emergency contacts</p>
+          </div>
+          <div class="sos-feature">
+            <div class="feature-icon">📡</div>
+            <h3>Real-Time Location Sharing</h3>
+            <p>Your exact GPS coordinates are instantly shared with trusted contacts via our companion mobile app</p>
+          </div>
+          <div class="sos-feature">
+            <div class="feature-icon">🔔</div>
+            <h3>Geofencing Alerts</h3>
+            <p>Get notified when your loved ones enter or exit predefined safe zones</p>
+          </div>
+        </div>
+      </div>
+      <button class="sos-button">Test SOS Alert</button>
+    </section>
+
+    <!-- Health Monitoring with Dashboard Image -->
+    <section id="health" class="section-card health-section">
+      <h2>💚 Health Monitoring Dashboard</h2>
+      <div class="health-wrapper">
+        <div class="health-image">
+          <img src="https://pplx-res.cloudinary.com/image/upload/v1755016500/pplx_project_search_images/a7b0c7c91e30f38f7628d2c21d74b1d3581d6121.png" alt="Modern Health Dashboard">
+        </div>
+        <div class="health-grid">
+          <div class="health-card">
+            <h3>Oxygen Level</h3>
+            <div class="stat-display">
+              <span class="stat-icon">💧</span>
+              <span class="stat-value">98<span class="unit">%</span></span>
+            </div>
+            <p class="last-update">Last measured: 10 mins ago</p>
+            <div class="status-bar normal"></div>
+          </div>
+          <div class="health-card">
+            <h3>Heart Rate</h3>
+            <div class="stat-display">
+              <span class="stat-icon">💓</span>
+              <span class="stat-value">72<span class="unit">bpm</span></span>
+            </div>
+            <p class="last-update">Last measured: 8 mins ago</p>
+            <div class="status-bar normal"></div>
+          </div>
+          <div class="health-card">
+            <h3>Blood Pressure</h3>
+            <div class="stat-display">
+              <span class="stat-icon">🩺</span>
+              <span class="stat-value">120/80<span class="unit">mmHg</span></span>
+            </div>
+            <p class="last-update">Last measured: 15 mins ago</p>
+            <div class="status-bar normal"></div>
+          </div>
+          <div class="health-card">
+            <h3>Stress Level</h3>
+            <div class="stat-display">
+              <span class="stat-icon">🧘</span>
+              <span class="stat-value">Normal</span>
+            </div>
+            <p class="last-update">Last measured: 12 mins ago</p>
+            <div class="status-bar normal"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Smartwatch Technology Section -->
+    <section class="tech-section">
+      <h2>🔧 Advanced Wearable Technology</h2>
+      <div class="tech-wrapper">
+        <div class="tech-content">
+          <div class="tech-item">
+            <h3>📱 Smartwatch Integration</h3>
+            <p>Real-time health tracking with heart rate monitor, sleep tracking, and stress detection</p>
+          </div>
+          <div class="tech-item">
+            <h3>🛰️ GPS Precision</h3>
+            <p>Accurate location tracking using GPS, WiFi, and cellular triangulation for best results</p>
+          </div>
+          <div class="tech-item">
+            <h3>🔋 All-Day Battery</h3>
+            <p>Long-lasting battery life ensures 24/7 tracking and monitoring without frequent charging</p>
+          </div>
+        </div>
+        <div class="tech-image">
+          <img src="https://pplx-res.cloudinary.com/image/upload/v1755029384/pplx_project_search_images/fd4cf2b0746952cd60769b9625092d77e8012861.png" alt="Smartwatch Health Monitoring">
+        </div>
+      </div>
+    </section>
+
+    <!-- About SafeX with Family Image -->
+    <section id="about" class="section-card about-section">
+      <h2>About SafeX</h2>
+      <div class="about-wrapper">
+        <div class="about-image">
+          <img src="https://pplx-res.cloudinary.com/image/upload/v1762688053/pplx_project_search_images/81cbd1a8e40dc6ec1b2dccee0d3cc7e3815f7e19.png" alt="Elderly and Child Safety">
+        </div>
+        <div class="about-content">
+          <p class="about-text">SafeX develops affordable, voice-activated wearable safety devices that ensure personal safety for vulnerable groups. Our low-cost solution addresses the critical gap in existing safety tools - victims often cannot press a button in moments of panic.</p>
+          
+          <div class="features-list">
+            <h3>Key Features</h3>
+            <ul>
+              <li>✅ Voice-activated SOS trigger using preset code words</li>
+              <li>✅ Real-time GPS tracking (ESP32 + GPS module)</li>
+              <li>✅ Companion mobile app for Android/iOS</li>
+              <li>✅ Works in low-connectivity situations</li>
+              <li>✅ Geofencing and instant alerts</li>
+              <li>✅ Affordable pricing at ₹2,000 per device</li>
+            </ul>
+          </div>
+
+          <div class="target-users">
+            <h3>Who is SafeX for?</h3>
+            <div class="user-cards">
+              <div class="user-card">
+                <span class="user-icon">👵</span>
+                <p>Elderly Citizens</p>
+              </div>
+              <div class="user-card">
+                <span class="user-icon">👧</span>
+                <p>Children</p>
+              </div>
+              <div class="user-card">
+                <span class="user-icon">👩</span>
+                <p>Women Travelers</p>
+              </div>
+              <div class="user-card">
+                <span class="user-icon">🌙</span>
+                <p>Late Night Workers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SafeX - Personal Safety & Device Tracking. All rights reserved.</p>
+    <p class="footer-note">Siddartha Institute of Science and Technology, Puttur, AP</p>
+  </footer>
+
+  <!-- Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+  <script src="script.js"></script>
+</body>
+</html>
